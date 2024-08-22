@@ -1,0 +1,12 @@
+---
+resources:
+  - ../base1
+patches:
+  # Customize for internal RBD storage.
+  - target:
+      kind: PersistentVolumeClaim
+      name: busybox-pvc-1
+    patch: |-
+      - op: replace
+        path: /spec/storageClassName
+        value: ocs-storagecluster-ceph-rbd
