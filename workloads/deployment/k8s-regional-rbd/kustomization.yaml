@@ -8,4 +8,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/storageClassName
-        value: rook-ceph-block
+        value: rook-ceph-block-2
