@@ -34,7 +34,13 @@ spec:
           volumeMounts:
             - name: varlog
               mountPath: /var/log
+            # - name: tmpdir
+            #   mountPath: /tmp
       volumes:
         - name: varlog
           persistentVolumeClaim:
             claimName: busybox-pvc
+            # readOnly: false
+        # - name: tmpdir
+        #   persistentVolumeClaim:
+        #     claimName: busybox-pvc-2
