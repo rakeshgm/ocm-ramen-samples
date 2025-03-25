@@ -9,4 +9,4 @@ patches:
     patch: |-
       - op: replace
         path: /spec/storageClassName
-        value: ocs-external-storagecluster-ceph-rbd
+        value: openshift-storage-client-ceph-rbd 
